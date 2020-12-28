@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Home | glitchedGoose()</title>
+    <link rel="icon" href="./assets/icon.png">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat">
+    <link rel="stylesheet" href="./css/universal.css">
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./css/nav.css">
+    <link rel="stylesheet" href="./css/querys.css">
+  </head>
+  <body>
+    <canvas id="canvas" width="300" height="300"></canvas>
+    <section class="nav">
+      <h1 class="logo">glitchedGoose<span>()</span></h1>
+
+      <div class="nav-links">
+        <a href="./index.html" class="link">Home</a>
+        <a href="./about.html" class="link">About</a>
+        <a href="" class="link active">Projects</a>
+        <a href="./contact.html" class="link">Contact</a>
+      </div>
+    </section>
+    
+    <main style="margin-top: 100px;">
+      <div class="card card-vertical">
+        <h2>My projects<span>,</span></h2>
+        
+        <div class="projects">
+          <div class="project-group">
+            <h2 class="no-line">Games</h2>
+          </div>
+          
+          <div class="project-group">
+            <h2 class="no-line">Javascript</h2>
+          </div>
+          
+          <div class="project-group">
+            <h2 class="no-line">Websites</h2>
+          </div>
+        </div>
+      </div>
+    </main>
+    
+    <script charset="utf-8">
+      const canvas = document.querySelector('#canvas');
+      const ctx = canvas.getContext('2d');
+      const body = document.querySelector('body');
+      let width, height;
+      
+      setCanvasDimentions();
+      
+      window.onresize = setCanvasDimentions;
+      
+      function setCanvasDimentions() {
+        width = canvas.width = window.innerWidth;
+        height = canvas.height = window.innerHeight;
+      }
+    </script>
+    <script src="./scripts/links.js" charset="utf-8"></script>
+    <script src="./scripts/observers.js" charset="utf-8"></script>
+    <script src="./scripts/circle.js" charset="utf-8"></script>
+    <script src="./scripts/canvas.js" charset="utf-8"></script>
+  </body>
+</html>

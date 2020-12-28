@@ -1,0 +1,179 @@
+.hero {
+  height: calc(100vh - 55px);
+  margin-top: 55px;
+}
+
+.hero svg {
+  width: 100%;
+  height: calc(100vh - 55px);
+  position: absolute;
+  top: 55px;
+  left: 0;
+  z-index: -1;
+}
+
+.hero .img {
+  display: block;
+  width: 250px;
+  height: auto;
+  position: absolute;
+  left: 71%;
+  top: 330px;
+  filter: invert(55%);
+}
+
+.hero .img::after {
+  content: 'Icon from Fontawesome.com';
+  display: block;
+  font-size: 10px;
+  text-align: center;
+}
+
+.hero .card {
+  margin: 130px 0 0 12.5%;
+  width: 457px;
+  height: 303px;
+}
+
+main {
+  padding-bottom: 70px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+main .card {
+  width: 75%;
+  display: flex;
+}
+
+main .card, main .advertiser {
+  margin-bottom: 100px;
+}
+
+.left {
+  width: 30%;
+  min-width: 220px;
+}
+
+.right {
+  width: 70%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.advertiser {
+  display: flex;
+  width: 75%;
+}
+
+.advertiser .card {
+  width: calc(100% - 434px);
+  height: 389px;
+  margin-bottom: 0;
+  border-bottom-left-radius: 0;
+  border-top-left-radius: 0;
+}
+
+.advertiser .advertiser-reversed {
+  border-radius: 8px;
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+}
+
+.contact-info-button {
+  display: block;
+  position: relative;
+  right: 110px;
+  top: 135px;
+  background: white;
+  width: 306px;
+  height: 48px;
+  text-transform: uppercase;
+  text-align: center;
+  line-height: 48px;
+  font-size: 28px;
+  font-weight: bold;
+  text-decoration: none;
+  color: var(--orange);
+  transform: rotate(90deg);
+}
+
+.no-line, .submit {
+  margin: 20px 0 10px 0;
+}
+
+.no-line::after {
+  display: none;
+}
+
+.card ol {
+  margin-left: 40px;
+}
+
+.contact-form-con {
+  display: flex;
+}
+
+.contact-form-con input, .submit, textarea  {
+  padding: 5px;
+  outline: none;
+  font-size: 19px;
+  resize: none;
+  width: 80%;
+  min-width: 220px;
+  border: 1px solid black;
+}
+
+.submit {
+  color: var(--orange);
+  background: white;
+  width: 210px;
+  height: 40px;
+  font-weight: bold;
+  font-style: italic;
+  font-size: 20px;
+  display: block;
+  margin-top: 35px;
+  transition: 180ms;
+}
+
+textarea {
+  height: 90%;
+  width: 100%;
+}
+
+.projects {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  margin-top: 20px;
+}
+
+.project-group {
+  background: white;
+  border-radius: 12px;
+  padding: 10px;
+  margin: 10px;
+  min-width: 250px;
+  text-align: center;
+}
+
+.project-group a {
+  display: block;
+  text-decoration: none;
+  margin: 15px auto;
+  padding: 10px;
+  background: var(--green);
+  color: white;
+  font-size: 19px;
+  width: 80%;
+  transition: 150ms ease-out;
+}
+
+.project-group a:hover {
+  box-shadow: 3px 3px 10px 0 #888;
+  transform: translate(-3px, -3px);
+}
