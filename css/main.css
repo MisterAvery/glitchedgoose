@@ -1,13 +1,13 @@
 .hero {
-  height: calc(100vh - 55px);
-  margin-top: 55px;
+  height: calc(100vh - var(--nav-height));
+  margin-top: var(--nav-height);
 }
 
 .hero svg {
   width: 100%;
-  height: calc(100vh - 55px);
+  height: calc(100vh - var(--nav-height));
   position: absolute;
-  top: 55px;
+  top: var(--nav-height);
   left: 0;
   z-index: -1;
 }
@@ -30,9 +30,8 @@
 }
 
 .hero .card {
-  margin: 130px 0 0 12.5%;
+  margin: calc(var(--nav-height) + 50px) 0 0 12.5%;
   width: 457px;
-  height: 303px;
 }
 
 main {
@@ -43,7 +42,7 @@ main {
 }
 
 main .card {
-  width: 75%;
+  width: 80%;
   display: flex;
 }
 
@@ -66,18 +65,19 @@ main .card, main .advertiser {
 
 .advertiser {
   display: flex;
-  width: 75%;
+  width: 80%;
 }
-
+ 
 .advertiser .card {
   width: calc(100% - 434px);
-  height: 389px;
+  min-height: 389px;
+  max-height: 600px;
   margin-bottom: 0;
   border-bottom-left-radius: 0;
   border-top-left-radius: 0;
 }
 
-.advertiser .advertiser-reversed {
+.advertiser-reversed {
   border-radius: 8px;
   border-top-right-radius: 0;
   border-bottom-right-radius: 0;
@@ -127,6 +127,10 @@ main .card, main .advertiser {
   border: 1px solid black;
 }
 
+.input-con {
+  width: 50%;
+}
+
 .submit {
   color: var(--orange);
   background: white;
@@ -157,7 +161,7 @@ textarea {
   border-radius: 12px;
   padding: 10px;
   margin: 10px;
-  min-width: 250px;
+  min-width: 350px;
   text-align: center;
 }
 

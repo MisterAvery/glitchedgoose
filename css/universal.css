@@ -4,6 +4,8 @@
   --red: #ff5f5f;
   --green: #53e38f;
   --grey: #efefef;
+  
+  --nav-height: 55px;
 }
 
 * {
@@ -19,6 +21,7 @@ span {
 
 p {
   font-size: 19px;
+  line-height: 25px;
 }
 
 #canvas {
@@ -34,7 +37,7 @@ p {
 }
 
 .quote {
-  width: 40%;
+  width: 50%;
   text-align: right;
 }
 
@@ -83,14 +86,13 @@ h2::after {
   height: 100px;
   margin: 0 30px;
   font-size: 37px;
-  text-align: center;
+  text-align: center; 
   line-height: 100px;
 }
 
 .img-filler-large {
   display: block;
-  width: 434px;
-  height: 389px;
+  max-height: 600px;
   background: #c4c4c4;
   overflow: hidden;
   background-size: cover;

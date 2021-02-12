@@ -25,6 +25,14 @@ function addList(ary, groupNum, aryName) {
       case 'grid':
         linkName = 'cool-grid';
         break;
+      
+      case 'three-js':
+        linkName = '3d-shapes';
+        break;
+        
+      case 'game-testing':
+        linkName = 'cave-game';
+        break;
     }
     
     groups[groupNum].innerHTML += `<a href="./assets/projects/${aryName}/${index}/index.html"><h3>${linkName}</h3></a>`;

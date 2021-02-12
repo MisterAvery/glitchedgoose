@@ -1,3 +1,120 @@
-@media screen and (max-width: 1080px) {
+@media (orientation: landscape) and (max-width: 1060px) {
+  .nav .logo {
+    font-size: 28px;
+  }
   
+  .nav .nav-links a {
+    font-size: 22px;
+  }
+}
+
+@media (orientation: portrait) {
+  :root {
+    --nav-height: 100px;
+  }
+  
+  h2 {
+    font-size: 30px;
+    margin-bottom: 20px;
+  }
+  
+  .hero {
+    height: auto;
+    margin-bottom: 130px;
+  }
+  
+  main .card {
+    flex-direction: column;
+  }
+
+  .left, .right {
+    width: 100%;
+  }
+
+  .right {
+    margin-top: 40px;
+  }
+
+  .contact-info-button {
+    position: static;
+    transform: rotate(0deg);
+    margin-top: 30px;
+  }
+
+  .card p {
+    font-size: 22px;
+  }
+  
+  .nav .logo {
+    font-size: 40px;
+  }
+  
+  .nav .nav-links {
+    width: 55%;
+  }
+  
+  .nav .nav-links a {
+    font-size: 28px;
+  }
+  
+  .contact-form-con {
+    flex-direction: column-reverse;
+  }
+  
+  .contact-form-con h2 {
+    font-size: 30px;
+  }
+  
+  .submit, .contact-form-con input {
+    font-size: 30px;
+  }
+  
+  .contact-form-con input, textarea {
+    padding: 20px 30px;
+  }
+  
+  .input-con {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .contact-form-con input, .submit, textarea {
+    width: 60%;
+    min-height: 50px;
+  }
+  
+  textarea {
+    width: 100%;
+    min-height: 200px;
+  }
+  
+  .project-group a {
+    font-size: 28px;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .advertiser .left, .advertiser .right {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 1060px) {
+  .hero .card {
+    margin-left: 5%;
+  }
+
+  .quote {
+    width: 60%;
+  }
+  
+  main .card, .advertiser {
+    width: 90%;
+  }
+
+  .advertiser .left, .advertiser .right {
+    width: 100%;
+  }
 }

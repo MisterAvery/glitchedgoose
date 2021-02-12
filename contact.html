@@ -24,6 +24,7 @@
         };
       
         emailjs.send('service_0once2r', 'template_pngi0yo', tempParams);
+        alert('Your email has been sent. Thank you for your feedback!!')
       }
     </script>
   </head>
@@ -40,23 +41,23 @@
       </div>
     </section>
     
-    <main style="margin-top: 100px;">
+    <main style="margin-top: calc(var(--nav-height) + 30px);">
       <h2 class="no-line" style="margin-bottom: 15px; padding: 10px;">Email Me! I would love to hear from you</h2>
       
       <div class="card contact-form-con">
-        <div style="width: 50%;">
+        <div class="input-con">
           <h2 class="no-line">Your Name</h2>
-          <input type="text" id="from-name">
+          <input type="text" id="from-name" required>
           
-          <h2 class="no-line">Who Sould I reply To</h2>
-          <input type="text" id="reply-to">
+          <h2 class="no-line">Your Email</h2>
+          <input type="text" id="reply-to" required>
           
           <button class="submit" onclick="sendEmail()">Send Email</button>
         </div>
         
-        <div style="width: 50%;">
-          <h2 class="no-line" style="height: 10%; margin: 0 0 10px 0;">What is the message</h2>
-          <textarea id="message"></textarea>
+        <div class="input-con">
+          <h2 class="no-line" style="height: 10%; margin: 0 0 10px 0;">What is Your message</h2>
+          <textarea id="message" required></textarea>
         </div>
       </div>
     </main>
