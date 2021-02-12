@@ -21,20 +21,20 @@
         <a href="" class="link active">About</a>
         <a href="./projects.html" class="link">Projects</a>
         <a href="./contact.html" class="link">Contact</a>
-      </div>
+      </div> 
     </section>
-    
+
     <main style="margin-top: calc(var(--nav-height) + 80px);">
       <section class="card">
         <h2 style="min-width: 180px;">How I started</h2>
         <p>When I first started out programming, I had no notion of where it would take me. I had no idea that in a few years, I would be creating and publishing websites. The first program I ever wrote was a script that modeled the layers of the Earth. It was programmed in the Python programming language was sluggish and clunky. The reason for its creation was my Science teacher, Mrs.Yeager. We were studying the layers of the Earth she decided she would add a flair to the unit. She got us set up in a programming environment and gave us a program to copy line for line. I was immediately Hooked. And once I was hooked, I couldn't stop. I found that I loved to program. The freedom it gave me was exhilarating. I could create whatever I wanted with enough time,  effort, and knowledge. The only limitations I ever found were my own knowledge and hardware. Although sometimes it is very frustrating looking for the one "nonexistant" bug, the reward you get from fixing it is indescribable.</p>
       </section>
-      
+
       <section class="card">
         <h2 style="min-width: 180px;">About Me</h2>
         <p>My name is glitchedGoose. It's a little weird, but that's the pen name I chose. I am a self-taught front-end web developer, and I have been programming since 2018. According to Wikipedia, front-end web development is "the practice of converting data to a graphical interface, through the use of HTML, CSS, and JavaScript, so that users can view and interact with that data." In layman's terms, that means we use the programming languages HTML, CSS, and JavaScript(as well as tools to make things easier) to create what you see on the Internet. This means  anything you see on the Internet is the rendered output of those three languages. Without them, the Internet itself wouldn't exist as you know it to.</p>
       </section>
-      
+
       <section class="card">
         <h2 style="min-width: 180px;">My Story</h2>
         <div>
@@ -43,20 +43,20 @@
           <p>But after a while, I started to get bored. I was running out of ideas for projects, and I was tired of typing the same lines of code over and over. I had always known about JS, but I was a little scared of it. There were so many different concepts and ideas. It made learning the language seem daunting. So I went back to the place I knew I could learn a language without being overwhelmed; Codecademy. Once again, I learned what I could from Codecademy and then took to youtube to learn more. I am still doing this to this day. Learning what I can and then experimenting with it. Because you never know everything, there is always something else to learn.</p>
         </div>
       </section>
-      
+
       <h1 class="quote"><span>"</span>A journey of a thousand miles begins with a single step<span>"</span><br/>-Lao Tzu</h1>
     </main>
-    
+
     <script charset="utf-8">
       const canvas = document.querySelector('#canvas');
       const ctx = canvas.getContext('2d');
       const body = document.querySelector('body');
       let width, height;
-      
+
       setCanvasDimentions();
-      
+
       window.onresize = setCanvasDimentions;
-      
+
       function setCanvasDimentions() {
         width = canvas.width = window.innerWidth;
         height = canvas.height = window.innerHeight;
