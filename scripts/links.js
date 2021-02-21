@@ -1,6 +1,6 @@
 let groups = document.querySelectorAll('.project-group');
 
-let games = ['breakout', 'clicker-game', 'Dino-Game', 'flappy-bird', 'game-testing', 'HonkMaster89', 'platformer', 'pong', 'slot-machine', 'snake-2', 'Snake-Game', 'tetris', 'Toby', 'Bomberman'];
+let games = ['breakout', 'bubble-popper', 'clicker-game', 'Dino-Game', 'flappy-bird', 'game-testing', 'HonkMaster89', 'platformer', 'pong', 'slot-machine', 'snake-2', 'Snake-Game', 'tetris', 'Toby', 'Bomberman'];
 
 let jsProjects = ['balls-moving-on-click', 'bouncing-balls', 'cave-generation', 'clock', 'combo-lock', 'factoring', 'false-3d', 'bouncing-square', 'first-dino-game', 'grid', 'maze-generator', 'nexus-particles', 'noise-generator', 'ray-casting', 'recursive-backtracker', 'scrolling-tile-map', 'sound', 'three-js', 'tile-map', 'translator', 'Typewriting', 'triangle-fractal', 'mandelbrot-set'];
 
@@ -25,16 +25,16 @@ function addList(ary, groupNum, aryName) {
       case 'grid':
         linkName = 'cool-grid';
         break;
-      
+
       case 'three-js':
         linkName = '3d-shapes';
         break;
-        
+
       case 'game-testing':
         linkName = 'cave-game';
         break;
     }
-    
+
     groups[groupNum].innerHTML += `<a href="./assets/projects/${aryName}/${index}/index.html"><h3>${linkName}</h3></a>`;
   });
 }
