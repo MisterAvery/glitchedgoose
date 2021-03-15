@@ -2,7 +2,7 @@ let groups = document.querySelectorAll('.project-group');
 
 let games = ['breakout', 'bubble-popper', 'clicker-game', 'Dino-Game', 'flappy-bird', 'game-testing', 'HonkMaster89', 'platformer', 'pong', 'slot-machine', 'snake-2', 'Snake-Game', 'tetris', 'Toby', 'Bomberman'];
 
-let jsProjects = ['balls-moving-on-click', 'bouncing-balls', 'cave-generation', 'clock', 'combo-lock', 'factoring', 'false-3d', 'bouncing-square', 'first-dino-game', 'grid', 'maze-generator', 'nexus-particles', 'noise-generator', 'ray-casting', 'recursive-backtracker', 'scrolling-tile-map', 'sound', 'three-js', 'tile-map', 'translator', 'Typewriting', 'triangle-fractal', 'mandelbrot-set'];
+let jsProjects = ['clock-2', 'balls-moving-on-click', 'bouncing-balls', 'cave-generation', 'clock', 'combo-lock', 'factoring', 'false-3d', 'bouncing-square', 'first-dino-game', 'grid', 'maze-generator', 'nexus-particles', 'noise-generator', 'ray-casting', 'recursive-backtracker', 'scrolling-tile-map', 'sound', 'three-js', 'tile-map', 'translator', 'Typewriting', 'triangle-fractal', 'mandelbrot-set'];
 
 let websites =['acordian-menu', 'animated-bg-gradient', 'anudderlySmartCow-site', 'cool-buttons', 'DOG\'s-site', 'drop-menu', 'glitch-effect', 'login-screen', 'moch-website', 'navagation-bar', 'navbars', 'shrink-and-grow', 'the-louis-site', 'unblockable-games', 'website-practice'];
 
@@ -32,6 +32,10 @@ function addList(ary, groupNum, aryName) {
 
       case 'game-testing':
         linkName = 'cave-game';
+        break;
+        
+      case 'recursive-backtracker':
+        linkName = 'recursive-maze-generator';
         break;
     }
 
