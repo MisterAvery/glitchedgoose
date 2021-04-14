@@ -4,11 +4,11 @@ let games = ['best-dino-game', 'breakout', 'bubble-popper', 'clicker-game', 'Din
 
 let jsProjects = ['clock-2', 'balls-moving-on-click', 'bouncing-balls', 'cave-generation', 'clock', 'combo-lock', 'factoring', 'false-3d', 'bouncing-square', 'first-dino-game', 'grid', 'maze-generator', 'nexus-particles', 'noise-generator', 'ray-casting', 'recursive-backtracker', 'scrolling-tile-map', 'sound', 'three-js', 'tile-map', 'translator', 'Typewriting', 'triangle-fractal', 'mandelbrot-set'];
 
-let websites =['other-buttons', 'acordian-menu', 'animated-bg-gradient', 'anudderlySmartCow-site', 'cool-buttons', 'DOG\'s-site', 'drop-menu', 'glitch-effect', 'login-screen', 'moch-website', 'navagation-bar', 'navbars', 'shrink-and-grow', 'the-louis-site', 'unblockable-games', 'website-practice'];
+let HTMLThings =['login-page', 'other-buttons', 'acordian-menu', 'animated-bg-gradient', 'anudderlySmartCow-site', 'cool-buttons', 'DOG\'s-site', 'drop-menu', 'glitch-effect', 'login-screen', 'moch-website', 'navagation-bar', 'navbars', 'shrink-and-grow', 'the-louis-site', 'unblockable-games', 'website-practice'];
 
 addList(games, 0, 'games');
 addList(jsProjects, 1, 'js-projects');
-addList(websites, 2, 'websites');
+addList(HTMLThings, 2, 'HTML-Things');
 
 function addList(ary, groupNum, aryName) {
   ary.forEach(index => {
