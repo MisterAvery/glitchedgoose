@@ -1,6 +1,6 @@
 let groups = document.querySelectorAll('.project-group');
 
-let games = ['unbloked-slope', 'best-dino-game', 'breakout', 'bubble-popper', 'clicker-game', 'Dino-Game', 'flappy-bird', 'game-testing', 'HonkMaster89', 'platformer', 'pong', 'slot-machine', 'snake-2', 'Snake-Game', 'tetris', 'Toby', 'Bomberman'];
+let games = ['unblocked-slope', 'best-dino-game', 'breakout', 'bubble-popper', 'clicker-game', 'Dino-Game', 'flappy-bird', 'game-testing', 'HonkMaster89', 'platformer', 'pong', 'slot-machine', 'snake-2', 'Snake-Game', 'tetris', 'Toby', 'Bomberman'];
 
 let jsProjects = ['clock-2', 'balls-moving-on-click', 'bouncing-balls', 'cave-generation', 'clock', 'combo-lock', 'factoring', 'false-3d', 'bouncing-square', 'first-dino-game', 'grid', 'maze-generator', 'nexus-particles', 'noise-generator', 'ray-casting', 'recursive-backtracker', 'scrolling-tile-map', 'sound', 'three-js', 'tile-map', 'translator', 'Typewriting', 'triangle-fractal', 'mandelbrot-set'];
 
