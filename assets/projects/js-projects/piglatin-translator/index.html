@@ -1,0 +1,40 @@
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <link href="styles.css" rel="stylesheet" type="text/css">
+    <title>Piglatin translator</title>
+  </head>
+  <body>
+    <h1>The Piglatin Translator</h1>
+    
+    <div class="con">
+      <textarea id="input" class="box" value="" placeholder="Type Your Message Here"></textarea>
+      <button id="go" onclick="encript()">Translate</button>
+      <h2 id="output" class="box" style="text-align: left;">Output Goes Here</h2>
+    </div>
+    
+    <h2>Translates normal text into Piglatin.<br> Not the other way around.</h2>
+    
+    <script>
+      const input = document.querySelector('#input');
+      const output = document.querySelector('#output');
+      
+      function encript() {
+        if(input.value == '') return alert('Please enter a valid sentence or word.');
+        let words = input.value.split(' ');
+      	
+      	words.forEach((word, i) => {
+      	  if(word[0] == 'a' || word[0] == 'e' || word[0] == 'i' || word[0] == 'o' || word[0] == 'u') words[i] += 'way';
+      	  else if(isNaN(word)) {
+      	    word = word.split('');
+      	    word.push(word.shift() + 'ay');
+      	    words[i] = word.join('');
+      	  }
+      	});
+      	
+      	output.innerText = words.join(' ');
+      }
+    </script>
+  </body>
+</html>
